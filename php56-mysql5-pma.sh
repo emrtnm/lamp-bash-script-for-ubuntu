@@ -34,15 +34,10 @@ printf $DIVIDER
 printf "Mysql is installing...\n"
 printf $DIVIDER
 
-echo Enter a new mysql password:
-read mysqlpasswd
-
 sudo wget https://dev.mysql.com/get/mysql-apt-config_0.8.12-1_all.deb
 sudo dpkg -i mysql-apt-config_0.8.12-1_all.deb
 sudo apt-get update
-sudo apt-get install mysql-server
-
-sudo mysql -Bse "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '$mysqlpasswd';"
+sudo apt-get install mysql-server -y
 
 mysql_secure_installation
 
