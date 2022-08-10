@@ -1,4 +1,4 @@
-# Lamp Bash Scripts For Ubuntu
+# Lamp Bash Script For Ubuntu
 This script is written using the shell, in order to quickly deploy PHP environment for Ubuntu Servers. Simple but it is efficient and safe. Pls contribute.
 
 ## Includes
@@ -19,7 +19,7 @@ The easiest way to get started is to clone the repository:
 
 ```bash
 # Get the repo
-sudo git clone https://github.com/emrtnm/lamp-bash-scripts-for-ubuntu.git
+sudo git clone https://github.com/emrtnm/lamp-bash-script-for-ubuntu.git
 
 # Chmod 
 sudo chmod +x ./lamp.sh
