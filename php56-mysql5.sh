@@ -16,8 +16,6 @@ sudo mkdir /var/www/html
 sudo chown -R $USER:$USER /var/www
 sudo chmod -R 775 /var/www
 sudo rm -rf /var/www/html/index.html
-sudo > /etc/apache2/apache2.conf
-sudo cat ./apache2.conf >> /etc/apache2/apache2.conf
 sudo echo "<?php phpinfo();" >> /var/www/html/index.php
 
 printf $DIVIDER
