@@ -35,9 +35,9 @@ printf $DIVIDER
 sudo wget https://dev.mysql.com/get/mysql-apt-config_0.8.12-1_all.deb
 sudo dpkg -i mysql-apt-config_0.8.12-1_all.deb
 sudo apt-get update
-sudo apt-get install mysql-client=5.7.30-1ubuntu18.04 -y
-sudo apt-get install mysql-community-server=5.7.30-1ubuntu18.04 -y
-sudo apt-get install mysql-server=5.7.30-1ubuntu18.04 -y
+sudo apt-get install mysql-client=5.7.39-1ubuntu18.04 -y
+sudo apt-get install mysql-community-server=5.7.39-1ubuntu18.04 -y
+sudo apt-get install mysql-server=5.7.39-1ubuntu18.04 -y
 
 sudo systemctl restart mysql.service
 

@@ -34,11 +34,13 @@ sudo chmod +x ./lamp.sh
  - 2 = PHP7.4 + MySQL8 + PhpMyAdmin
  - 3 = PHP8.1 + MySQL8
  - 4 = PHP8.1 + MySQL8 + PhpMyAdmin
- - 5 = PHP5.6 + MySQL5.7 (Only Ubuntu 18)
- - 6 = PHP5.6 + MySQL5.7 + PhpMyAdmin (Only Ubuntu 18)
- - 7 = Remove All Components!
+ - 5 = PHP5.6 + MySQL5.7
+ - 6 = PHP5.6 + MySQL5.7 + PhpMyAdmin
+ - 7 = Add Domain
+ - 8 = Remove All Components!
 
 ### Make A Contribute!
 
-**#ubuntu20.04** **#debian** **#lamp** **#bash-scripts** **#bash** **#php** 
+**#ubuntu** **#debian** **#lamp** **#bash-scripts** **#bash** **#php** **#apache** **#mysql5**  **#mysql**  **#phpmyadmin**
+**#php8**  **#mysql8**  **#fast**
 
