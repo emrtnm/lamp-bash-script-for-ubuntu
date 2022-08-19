@@ -21,7 +21,6 @@ sudo rm -rf /etc/mysql
 sudo service apache2 stop
 sudo apt-get purge apache2 apache2-utils apache2.2-bin apache2-common -y
 sudo apt-get remove --purge apache2 apache2-utils apach2.2-bin apache2-common -y
-sudo rm -rf /var/www
 
 # Remove phpmyadmin
 sudo rm -rf /usr/share/phpmyadmin
