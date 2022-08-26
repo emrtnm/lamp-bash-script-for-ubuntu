@@ -4,7 +4,7 @@ DIVIDER="\n########################################\n\n"
 printf "Requirements are installing...\n"
 
 sudo add-apt-repository ppa:ondrej/php
-sudo apt install software-properties-common apt-transport-https -y
+sudo apt-get install software-properties-common apt-transport-https -y
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install wget nano screen unzip curl apache2 -y
@@ -31,7 +31,7 @@ printf $DIVIDER
 printf "Mysql is installing...\n"
 printf $DIVIDER
 
-echo Enter a new mysql password:
+echo "Enter a new mysql password: \c"
 read mysqlpasswd
 
 sudo apt-get install mysql-server -y
@@ -40,8 +40,9 @@ sudo mysql -Bse "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_pass
 
 mysql_secure_installation
 
-sudo systemctl restart apache2
-
 printf $DIVIDER
 printf "Mysql has been installed.\n"
 printf $DIVIDER
+
+sudo a2enmod rewrite
+sudo systemctl start apache2

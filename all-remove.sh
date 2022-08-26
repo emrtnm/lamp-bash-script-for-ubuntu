@@ -2,11 +2,11 @@
 DIVIDER="\n***************************************\n\n"
 
 # Remove php, php packages and other apps.
-sudo apt-get remove wget screen unzip curl -y
+sudo apt-get remove wget nano screen unzip curl software-properties-common apt-transport-https -y
 sudo apt-get purge php-* -y
 sudo apt-get purge php* -y
 
-# Remove mysql and mariadb
+# Remove mysql
 sudo service stop mysql
 sudo apt-get remove mysql-server mysql-client mysql-common -y
 sudo apt-get purge mysql-* -y

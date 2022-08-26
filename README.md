@@ -1,5 +1,5 @@
 # Lamp Bash Script For Ubuntu
-This script is written using the shell, in order to quickly deploy PHP environment for Ubuntu Servers. Simple but it is efficient and safe. Pls contribute.
+This script is written using the shell, in order to quickly deploy PHP environment for Ubuntu Servers. Simple but it is efficient and safe.
 
 ## Includes
  - Apache2
@@ -41,6 +41,6 @@ sudo chmod +x ./lamp.sh
 
 ### Make A Contribute!
 
-**#ubuntu** **#debian** **#lamp** **#bash-scripts** **#bash** **#php** **#apache** **#mysql5**  **#mysql**  **#phpmyadmin**
-**#php8**  **#mysql8**  **#fast**
+**#ubuntu** **#debian** **#lamp** **#bash** **#scripts** **#apache** **#php** **#mysql5**  **#mysql**  **#phpmyadmin**
+**#php8**  **#mysql8**
 

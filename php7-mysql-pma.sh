@@ -4,7 +4,7 @@ DIVIDER="\n########################################\n\n"
 printf "Requirements are installing...\n"
 
 sudo add-apt-repository ppa:ondrej/php -y
-sudo apt install software-properties-common apt-transport-https -y
+sudo apt-get install software-properties-common apt-transport-https -y
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install wget nano screen unzip curl apache2 -y
@@ -34,7 +34,7 @@ printf $DIVIDER
 printf "Mysql is installing...\n"
 printf $DIVIDER
 
-echo Enter a new mysql password:
+echo "Enter a new mysql password: \c"
 read mysqlpasswd
 
 sudo apt-get install mysql-server -y
@@ -57,6 +57,7 @@ sudo rm phpmyadmin.zip
 sudo mv phpMyAdmin-5.2.0-all-languages/ /usr/share/phpmyadmin
 sudo chmod -R 755 /usr/share/phpmyadmin
 sudo cat ./phpmyadmin.conf >> /etc/apache2/conf-available/phpmyadmin.conf
+sudo a2enmod rewrite
 sudo a2enconf phpmyadmin
 sudo systemctl reload apache2
 sudo mkdir /usr/share/phpmyadmin/tmp/

@@ -4,7 +4,7 @@ DIVIDER="\n########################################\n\n"
 printf "Requirements are installing...\n"
 
 sudo add-apt-repository ppa:ondrej/php
-sudo apt install software-properties-common apt-transport-https -y
+sudo apt-get install software-properties-common apt-transport-https -y
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install wget nano screen unzip curl apache2 -y
@@ -34,6 +34,7 @@ printf $DIVIDER
 
 sudo wget https://dev.mysql.com/get/mysql-apt-config_0.8.12-1_all.deb
 sudo dpkg -i mysql-apt-config_0.8.12-1_all.deb
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 467B942D3A79BD29
 sudo apt-get update
 sudo apt-get install mysql-client=5.7.39-1ubuntu18.04 -y
 sudo apt-get install mysql-community-server=5.7.39-1ubuntu18.04 -y
@@ -58,9 +59,12 @@ sudo chmod -R 755 /usr/share/phpmyadmin
 sudo cat ./phpmyadmin.conf >> /etc/apache2/conf-available/phpmyadmin.conf
 sudo mkdir /usr/share/phpmyadmin/tmp/
 sudo chown -R www-data:www-data /usr/share/phpmyadmin/tmp/
+sudo a2enmod rewrite
 sudo a2enconf phpmyadmin
 sudo systemctl reload apache2
 
 printf $DIVIDER
 printf "Phpmyadmin has been installed.\n"
 printf $DIVIDER
+
+sudo systemctl start apache2
