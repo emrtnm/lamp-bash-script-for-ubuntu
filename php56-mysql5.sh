@@ -22,7 +22,7 @@ printf $DIVIDER
 printf "PHP5.6 is installing..."
 printf $DIVIDER
 
-sudo apt-get install php5.6 php5.6-gd php5.6-mysql php5.6-imap php5.6-curl php5.6-intl php5.6-pspell php5.6-recode php5.6-sqlite3 php5.6-tidy php5.6-xmlrpc php5.6-xsl php5.6-zip php5.6-mbstring php5.6-soap php5.6-opcache php5.6-json php5.6-readline php5.6-xml -y
+sudo apt-get install php5.6 php5.6-cli php5.6-cgi php5.6-gd php5.6-mysql php5.6-imap php5.6-curl php5.6-intl php5.6-pspell php5.6-recode php5.6-sqlite3 php5.6-tidy php5.6-xmlrpc php5.6-xsl php5.6-zip php5.6-mbstring php5.6-soap php5.6-opcache php5.6-json php5.6-readline php5.6-xml -y
 
 printf $DIVIDER
 printf "PHP5.6 has been installed.\n"

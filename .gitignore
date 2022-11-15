@@ -1,0 +1,14 @@
+# Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# Other
+/vendor
+/nbproject/
+/.idea
+.DS_Store
+.env
+*.lock
