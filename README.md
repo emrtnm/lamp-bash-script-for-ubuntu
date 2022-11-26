@@ -38,7 +38,8 @@ sudo chmod +x ./lamp.sh
  - 6 = PHP5.6 + MySQL5.7 + PhpMyAdmin
  - 7 = Add Domain
  - 8 = Remove Domain
- - 9 = Remove All Components!
+ - 9 = Repair Chmod For Domain
+ - 10 = Remove All Components!
 
 ### Make A Contribute!
 

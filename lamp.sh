@@ -15,7 +15,8 @@ echo "5 = PHP5.6 + MySQL5.7"
 echo "6 = PHP5.6 + MySQL5.7 + PhpMyAdmin4.9"
 echo "7 = Add Domain"
 echo "8 = Remove Domain"
-echo "9 = Remove All Components!"
+echo "9 = Repair Chmod For Domain"
+echo "10 = Remove All Components!"
 echo $DIVIDER
 echo "Please select a package number: "
 read packname
@@ -75,6 +76,12 @@ then
 fi
 
 if [ "$packname" = 9 ]
+then
+  chmod +x repair-host.sh
+  ./repair-host.sh
+fi
+
+if [ "$packname" = 10 ]
 then
   chmod +x all-remove.sh
   ./all-remove.sh
