@@ -5,6 +5,8 @@ echo "Enter a domain name: \c"
 read domainname
 
 sudo mkdir /var/www/${domainname}
+sudo mkdir /var/www/${domainname}/public_html
+sudo mkdir /var/www/${domainname}/logs
 sudo chown -R www-data:www-data /var/www/${domainname}
 sudo chmod -R 755 /var/www/${domainname}
 
