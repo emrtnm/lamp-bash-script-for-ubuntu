@@ -41,6 +41,10 @@ sudo chmod +x ./lamp.sh
  - 9 = Repair Chmod For Domain
  - 10 = Remove All Components!
 
+## License
+
+This project is open-sourced software licensed under the [GPL-3.0 license](https://opensource.org/license/gpl-3-0/).
+
 ### Make A Contribute!
 
 **#ubuntu** **#debian** **#lamp** **#bash** **#scripts** **#apache** **#php** **#mysql5**  **#mysql**  **#phpmyadmin**
