@@ -47,6 +47,6 @@ This project is open-sourced software licensed under the [GPL-3.0 license](https
 
 ### Make A Contribute!
 
-**#ubuntu** **#debian** **#lamp** **#bash** **#scripts** **#apache** **#php** **#mysql5**  **#mysql**  **#phpmyadmin**
+**#ubuntu** **#lamp** **#bash** **#scripts** **#apache** **#php** **#mysql5**  **#mysql**  **#phpmyadmin**
 **#php8**  **#mysql8**
 
